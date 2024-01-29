@@ -1,0 +1,51 @@
+<!-- PUNCH ENEMY -->
+// walk
+int[][] walkImage_coordinates = {{14, 67, 23, 53}, {76, 68, 28, 52}, {144, 67, 20, 52},
+                                 {207, 67, 23, 52}, {267, 68, 34, 52}, {338, 67, 21, 53}};
+Animation<TextureRegion> walkAnim = spriteSheet.getAnimation
+    (walkImage_coordinates, 0.15f, Animation.PlayMode.LOOP_PINGPONG);
+this.storeAnimation("walk", walkAnim);
+
+// punch
+int [][] punchImage_coordinates = {{404, 67, 20, 53}, {471, 67, 20, 53}, {535, 67, 36, 53},
+                                   {602, 67, 29, 53}, {664, 67, 23, 53}};
+Animation<TextureRegion> punchAnim = spriteSheet.getAnimation
+    (punchImage_coordinates, 0.15f, Animation.PlayMode.LOOP_PINGPONG);
+this.storeAnimation("punch", punchAnim);
+
+<!-- DAGGER ENEMY -->
+// walk
+int[][] walkImage_coordinates = {{14, 67, 28, 53}, {76, 68, 28, 52}, {144, 67, 29, 52},
+                                 {207, 67, 35, 52}, {267, 68, 46, 52}, {338, 67, 34, 53}};
+Animation<TextureRegion> walkAnim = spriteSheet.getAnimation
+    (walkImage_coordinates, 0.15f, Animation.PlayMode.LOOP_PINGPONG);
+this.storeAnimation("walk", walkAnim);
+
+// attack
+int[][] attackImage_coordinates = {{404, 67, 29, 53}, {471, 67, 24, 53}, {535, 67, 47, 53},
+                                   {602, 67, 40, 53}, {664, 67, 35, 53}};
+Animation<TextureRegion> attackAnim = spriteSheet.getAnimation
+    (attackImage_coordinates, 0.15f, Animation.PlayMode.LOOP_PINGPONG);
+this.storeAnimation("attack", attackAnim);
+
+<!-- HAMMER ENEMY -->
+// walk
+int[][] walkImage_coordinates = {{12, 74, 30, 48}, {74, 75, 30, 47}, {142, 74, 29, 47},
+                                 {205, 74, 36, 47}, {265, 75, 47, 47}, {336, 74, 34, 48}};
+Animation<TextureRegion> walkAnim = spriteSheet.getAnimation
+    (walkImage_coordinates, 0.15f, Animation.PlayMode.LOOP_PINGPONG);
+this.storeAnimation("walk", walkAnim);
+
+// attack (long-range)
+int[][] attack_longImage_coordinates = {{402, 74, 30, 48}, {469, 74, 25, 48}, {533, 74, 48, 48},
+                                        {600, 74, 42, 48}, {663, 74, 35, 48}};
+Animation<TextureRegion> longAttackAnim = spriteSheet.getAnimation
+    (attack_longImage_coordinates, 0.15f, Animation.PlayMode.LOOP_PINGPONG);
+this.storeAnimation("long_attack", longAttackAnim);
+
+// attack (short-range)
+int[][] attack_shortImage_coordinates = {{729, 75, 30, 47}, {794, 75, 25, 47}, {859, 77, 48, 45},
+                                         {924, 77, 50, 45}, {989, 79, 48, 43}, {1055, 75, 39, 47}};
+Animation<TextureRegion> shortAttackAnim = spriteSheet.getAnimation
+    (attack_shortImage_coordinates, 0.15f, Animation.PlayMode.LOOP_PINGPONG);
+this.storeAnimation("short_attack", shortAttackAnim);
