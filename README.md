@@ -1,0 +1,2 @@
+# Spider-Man Game
+This is a game that I created for Computer-Science class. This game was constructed using Java, and more specifically, the LibGDX library. The LibGDX framework allowed me to create a very compelling game that was reminiscient of the original Spider-Man games on the Game-Boy Advance. Plus, I got to use additional tools, like Tiled (for level design), Audacity (for audio editing) and GIMP (for image manipulation).
